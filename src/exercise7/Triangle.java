@@ -6,6 +6,7 @@ import java.util.Scanner;
         public static void main(String[] args) {
             Scanner input = new Scanner(System.in);
 
+            System.out.print("Enter n: ");
             int n = input.nextInt();
 
             for (int line = 1; line <= n; line++) {
@@ -20,7 +21,10 @@ import java.util.Scanner;
 
         public static void printLine(int start, int end) {
             for (int j = start; j <= end; j++) {
-                System.out.print(j + " ");
+                System.out.print(j);
+                if(j != end) {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
