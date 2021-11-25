@@ -7,7 +7,6 @@ import java.util.Scanner;
             Scanner input = new Scanner(System.in);
 
             int n = input.nextInt();
-            System.out.println();
 
             for (int line = 1; line <= n; line++) {
                     printLine(1, line);
